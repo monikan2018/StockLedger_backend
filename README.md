@@ -1,4 +1,4 @@
-# Application Title: StockLedger_frontend
+# Application Title: StockLedger_Backend
 
 This web application allows the user to create and maintain a portfolio of stocks
 traded by user. The user account is authenticated thus providing safe access to
