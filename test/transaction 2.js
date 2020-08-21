@@ -58,7 +58,7 @@ describe('Transactions', () => {
   describe('GET /transactions/:id', () => {
     it('should get one transaction', done => {
       chai.request(server)
-        .get('/transactions/' + transactionId)
+        .get('/transactions' + transactionId)
         .set('Authorization', `Token token=${token}`)
         .end((e, res) => {
           res.should.have.status(200)

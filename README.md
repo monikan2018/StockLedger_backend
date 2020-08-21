@@ -1,32 +1,33 @@
-# Application Title: StockLedger
+# Application Title: StockLedger_frontend
 
-This application allows the user to do x, y, and z. Maybe here's a reason why I
-wanted to do this project, or came up with this idea.
+This web application allows the user to create and maintain a portfolio of stocks
+traded by user. The user account is authenticated thus providing safe access to
+the information logged.
 
 ## Important Links
 
-- [Other Repo](www.link.com)
-- [Deployed API](www.link.com)
-- [Deployed Client](www.link.com)
+- [github](https://github.com/monikan2018/StockLedger_backend)
+- [Deployed API](https://murmuring-cliffs-14664.herokuapp.com/)
+- [Deployed Client](https://monikan2018.github.io/StockLedger_frontend/)
 
 ## Planning Story
 
-Lorem ipsum dolor amet cloud bread letterpress squid actually, single-origin
-coffee williamsburg af poutine fingerstache austin semiotics paleo man braid
-vexillologist. Tumeric literally banjo pickled disrupt cold-pressed thundercats
-shoreditch try-hard health goth intelligentsia pop-up small batch skateboard
-farm-to-table. Meh tofu fam, direct trade tattooed stumptown etsy everyday
-carry activated charcoal. Neutra cornhole polaroid literally salvia, listicle
-tofu.
+I traded stocks for couple of years and entering the stock info in Microsoft
+excel. It ended up like spending hours entering each and every cell with information.
+I googled for application that might help to log and keep track of stocks. I decided
+to use this opporttunity to design this app to make sure loggin in information
+becomes esay and not time consuming.
 
 ### User Stories
 
 - As a user I want to sign in/up
-- As a user I want to Create a new < resource >
-- As a user I want to Read multiple < resources >
-- As a user I want to Read a single < resource >
-- As a user I want to Update a < resource > I own
-- As a user I want to Delete a < resource > I own
+- As a user I want to sign out
+- As a user I want to change my password
+- As a user I want to Create a new account
+- As a user I want to Create a new transaction
+- As a user I want to view all the transactions
+- As a user I want to Update a transaction by clicking on the button
+- As a user I want to Delete a transaction by clicking on the button
 
 ### Technologies Used
 
@@ -34,18 +35,24 @@ tofu.
 - HTML/CSS
 - Bootstrap
 - Javascript
+- RESTful API
+- SCSS
+- Ajax
+
 
 ### Unsolved Problems
 
-- Still need to ....
-- Would like to eventually ....
+- Show stock owned has profit or loss by streaming the real time stock price
+- A message box for user to keep notes
+- Generate reports
+- View records sector wise
 
 ## Images
 
 #### Wireframe:
-![wireframe](https://lucidchart.zendesk.com/hc/article_attachments/360001080866/Facebook_Wireframe_-_New_Page.png)
+![wireframe]https://app.lucidchart.com/documents/view/67ad6132-e536-404c-90e1-454983461a90
 
 ---
 
 #### ERD:
-![ERD](https://www.smartdraw.com/entity-relationship-diagram/img/cardinality.jpg?bn=1510011144)
+![ERD]https://app.lucidchart.com/documents/view/cf92bf83-2c88-4265-bd08-93b8e2eb5d25

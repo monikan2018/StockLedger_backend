@@ -2,6 +2,9 @@
 const express = require('express')
 const mongoose = require('mongoose')
 const cors = require('cors')
+let Handlebars = require('handlebars');
+let MomentHandler = require("handlebars.moment");
+MomentHandler.registerHelpers(Handlebars);
 
 // require route files
 const transactionRoutes = require('./app/routes/transaction_routes')
