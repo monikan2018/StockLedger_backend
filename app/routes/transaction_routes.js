@@ -30,13 +30,16 @@ const router = express.Router()
 // INDEX
 // GET /transactions
 router.get('/transactions', requireToken, (req, res, next) => {
-  Transaction.find()
+  Transaction.find({owner: req.user.id})
     .then(transactions => {
-      // `transactions` will be an array of Mongoose documents
-      // we want to convert each one to a POJO, so we use `.map` to
-      // apply `.toObject` to each one
-      return transactions.map(transaction => transaction.toObject())
+          // `transactions` will be an array of Mongoose documents
+          // we want to convert each one to a POJO, so we use `.map` to
+          // apply `.toObject` to each one
+
+          return transactions.map(transaction => transaction.toObject())
+
     })
+
     // respond with status 200 and JSON of the transactions
     .then(transactions => res.status(200).json({ transactions: transactions }))
     // if an error occurs, pass it to the handler
